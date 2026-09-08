@@ -6,37 +6,37 @@ packages:
   kind: ip
   source:
     path: aclint
-  digest: sha256:0bdef626562592dc420903a2758e2f46
+  digest: sha256:91a0028176e8fd715269c85a7d0cbb67
 - name: amba
   version: 0.1.0
   kind: library
   source:
     path: amba
-  digest: sha256:6e68171645ae543754e6bce87a081870
+  digest: sha256:5e08761cf23a4bb5e16863abfeb5dc06
 - name: hart
   version: 0.1.0
   kind: ip
   source:
     path: hart
-  digest: sha256:edd6cd199cba21bb9151355201b1e203
+  digest: sha256:18905b34a9bb876bc516c102d54a27f2
 - name: hwcore
   version: 0.1.0
   kind: library
   source:
     path: hwcore
-  digest: sha256:b4976d25b3e5636c63ad6926fdbc7b10
+  digest: sha256:f35cb8c679c2a7b6fdf7f85aff590da4
 - name: mbox
   version: 0.1.0
   kind: ip
   source:
     path: mbox
-  digest: sha256:d3994d517cb0921125a1f7ed8783d4ef
+  digest: sha256:20c2da6b2f4ee46aae21cacce36bd75a
 - name: plic
   version: 0.1.0
   kind: ip
   source:
     path: plic
-  digest: sha256:922de3c5d2a65ec594d752f427172d6e
+  digest: sha256:c8d27f75735cc4bd375e330dd58b6d85
 - name: soc-smp
   version: 0.1.0
   kind: ip
@@ -48,10 +48,10 @@ packages:
   kind: ip
   source:
     path: sram
-  digest: sha256:ff5d9729611807d88b82c2859bdf335c
+  digest: sha256:cf3b06696a9bb4e1af0c8e9e3f6a821a
 - name: uart
   version: 0.1.0
   kind: ip
   source:
     path: uart
-  digest: sha256:1feb954e2cba2d6a1629dd6c00fe3444
+  digest: sha256:37eea76a0bebf0b14b5d7930c7b32ead
