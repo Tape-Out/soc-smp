@@ -18,7 +18,7 @@ packages:
   kind: ip
   source:
     path: hart
-  digest: sha256:baeb6d4a093d47825565fbcf504f526e
+  digest: sha256:edd6cd199cba21bb9151355201b1e203
 - name: hwcore
   version: 0.1.0
   kind: library
@@ -36,7 +36,7 @@ packages:
   kind: ip
   source:
     path: plic
-  digest: sha256:30b2e95c9a0d45eb8ef488a06d17173f
+  digest: sha256:922de3c5d2a65ec594d752f427172d6e
 - name: soc-smp
   version: 0.1.0
   kind: ip
@@ -54,4 +54,4 @@ packages:
   kind: ip
   source:
     path: uart
-  digest: sha256:f04bbd1620701a375d06bcb3ee637d5e
+  digest: sha256:1feb954e2cba2d6a1629dd6c00fe3444
