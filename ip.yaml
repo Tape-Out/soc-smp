@@ -1,0 +1,56 @@
+name: soc-smp
+version: 0.1.0
+spec: '0.1'
+identity:
+  slug: soc-smp-tapeout
+  display_name: Dual core SoC
+  summary: Two harts sharing one address map, with a mailbox and hardware locks between
+    them.
+  category: soc
+  maturity: planned
+bus: apb4
+deps:
+  hwcore: ^0.1
+  amba: ^0.1
+instances:
+- name: cpu0
+  of: hart
+  with:
+    mul: true
+    smode: false
+- name: cpu1
+  of: hart
+  with:
+    mul: true
+    smode: false
+- name: mem
+  of: sram
+  with:
+    words: 1024
+  addr: 2147483648
+- name: uart0
+  of: uart
+  with:
+    fifoDepth: 8
+    parity: false
+    flowctrl: false
+  addr: 268439552
+- name: clint
+  of: aclint
+  with:
+    harts: 2
+    ssip: false
+  addr: 33554432
+- name: plic0
+  of: plic
+  with:
+    sources: 8
+    contexts: 2
+  addr: 201326592
+- name: ipc
+  of: mbox
+  with:
+    harts: 2
+    locks: 32
+    spinlock: true
+  addr: 268472320
