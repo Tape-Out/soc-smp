@@ -61,9 +61,11 @@ connect:
   - clint.msip[0] == 1
   - clint.mtip[0] == 1
   - plic0.eip[0] == 1
+  - 'False'
 - to: cpu1.irq.irq
   desc: 1 号核：各取第 1 份
   args:
   - clint.msip[1] == 1
   - clint.mtip[1] == 1
   - plic0.eip[1] == 1
+  - 'False'
