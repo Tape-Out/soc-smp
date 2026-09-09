@@ -36,7 +36,7 @@ packages:
   kind: ip
   source:
     path: plic
-  digest: sha256:58d769bf3ea953b1be1e2002afcb0e74
+  digest: sha256:d0b6232189cc39b2dc9ae7fc0299ec13
 - name: soc-smp
   version: 0.1.0
   kind: ip
