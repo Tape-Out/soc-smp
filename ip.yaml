@@ -54,3 +54,16 @@ instances:
     locks: 32
     spinlock: true
   addr: 268472320
+connect:
+- to: cpu0.irq.irq
+  desc: 0 号核：clint 的第 0 份、plic 的第 0 个上下文
+  args:
+  - clint.msip[0] == 1
+  - clint.mtip[0] == 1
+  - plic0.eip[0] == 1
+- to: cpu1.irq.irq
+  desc: 1 号核：各取第 1 份
+  args:
+  - clint.msip[1] == 1
+  - clint.mtip[1] == 1
+  - plic0.eip[1] == 1

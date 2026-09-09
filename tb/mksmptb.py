@@ -97,10 +97,8 @@ module mkSmpTb(Empty);
     // 两个核编号不同，程序靠这个分岔
     soc.cpu0_pins.halt(ph == Load);
     soc.cpu0_pins.hartid(0);
-    soc.cpu0_pins.irq(False, False, False);
     soc.cpu1_pins.halt(ph == Load);
     soc.cpu1_pins.hartid(1);
-    soc.cpu1_pins.irq(False, False, False);
     soc.clint_pins.tick(0);
     soc.plic0_pins.src(0);
     soc.uart0_pins.rxd(1);
