@@ -54,4 +54,4 @@ packages:
   kind: ip
   source:
     path: uart
-  digest: sha256:37cccee7b789f61c9f54e5cd6e0b9a54
+  digest: sha256:b1e6c361198f6aed764fe6346362a889
