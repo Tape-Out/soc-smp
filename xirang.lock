@@ -18,7 +18,7 @@ packages:
   kind: ip
   source:
     path: hart
-  digest: sha256:4adcbe64defeb95f1c933b3e1a182298
+  digest: sha256:3a10b599c56ed78830b1e2945f182751
 - name: hwcore
   version: 0.1.0
   kind: library
