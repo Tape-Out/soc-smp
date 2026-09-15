@@ -18,7 +18,7 @@ packages:
   kind: ip
   source:
     path: hart
-  digest: sha256:3a10b599c56ed78830b1e2945f182751
+  digest: sha256:13564aa6c8d9357126f0fc01304be8e2
 - name: hwcore
   version: 0.1.0
   kind: library
@@ -37,6 +37,12 @@ packages:
   source:
     path: plic
   digest: sha256:ecad193567839fd3dc16442033110c4b
+- name: rvfi
+  version: 0.1.0
+  kind: library
+  source:
+    path: rvfi
+  digest: sha256:82d84f9e430a827d3843cabeb07edf7c
 - name: soc-smp
   version: 0.1.0
   kind: ip
