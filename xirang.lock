@@ -12,7 +12,7 @@ packages:
   kind: library
   source:
     path: amba
-  digest: sha256:469416865301ac37fe66620b41bb44bb
+  digest: sha256:7c58f4afd3ba2c0f19717f5acb9958ca
 - name: hart
   version: 0.1.0
   kind: ip
@@ -24,7 +24,7 @@ packages:
   kind: library
   source:
     path: hwcore
-  digest: sha256:536344c69256ae652f8abaaceef60fe5
+  digest: sha256:601382042c45e154024f5be57acdaf93
 - name: mbox
   version: 0.1.0
   kind: ip
@@ -36,7 +36,7 @@ packages:
   kind: ip
   source:
     path: plic
-  digest: sha256:e96cef8ce4b37c3688f96cbe7e6df046
+  digest: sha256:ecad193567839fd3dc16442033110c4b
 - name: soc-smp
   version: 0.1.0
   kind: ip
