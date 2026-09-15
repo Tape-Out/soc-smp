@@ -24,7 +24,7 @@ packages:
   kind: library
   source:
     path: hwcore
-  digest: sha256:f23e8ba4e43310b13588fba6b838b619
+  digest: sha256:4704e2bd8019d8274e5d14ddf8779086
 - name: mbox
   version: 0.1.0
   kind: ip
