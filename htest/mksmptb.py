@@ -37,7 +37,7 @@ chk = "\n".join(f"      {i}: return tuple2(32'h{a:08X}, 32'h{v:08X});"
 
 (out / "SmpProg.bsv").write_text(f'''package SmpProg;
 
-// 由 tb/mksmptb.py 生成，勿手改。
+// 由 htest/mksmptb.py 生成，勿手改。
 
 Integer progLen = {len(prog)};
 Integer chkLen  = {len(CHECKS)};
