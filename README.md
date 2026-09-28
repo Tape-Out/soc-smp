@@ -1,6 +1,6 @@
 # soc-smp
 
-Symmetric multiprocessor reference SoC: two coherent cores.
+Symmetric multiprocessor reference SoC: two cores sharing one memory.
 
 ![maturity](https://img.shields.io/badge/maturity-planned-lightgrey) ![license](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0%20OR%20MulanPSL--2.0-blue)
 
@@ -11,7 +11,17 @@ bus-neutral contracts in [`hwcore`](https://github.com/Tape-Out/hwcore), assembl
 
 ## Status
 
-Planned. The entry in [`index`](https://github.com/Tape-Out/index) tracks what lands when.
+Assembled and tested end to end in CI; the badge stays at `planned` while the assembler is being reworked.
+
+| Part | Repository | Configuration |
+|:--:|:--:|:--:|
+| cores | [`hart`](https://github.com/Tape-Out/hart) ×2 | RV32IM, machine mode only |
+| memory | [`sram`](https://github.com/Tape-Out/sram) | 1024 words (4 KiB) at `0x8000_0000`, shared |
+| interrupts | [`aclint`](https://github.com/Tape-Out/aclint) · [`plic`](https://github.com/Tape-Out/plic) | two harts · 8 sources, one context per core |
+| inter-core | [`mbox`](https://github.com/Tape-Out/mbox) | mailboxes and 32 spinlocks |
+| console | [`uart`](https://github.com/Tape-Out/uart) | at `0x1000_1000` |
+
+The four ports of the two cores share one switch, round-robin. There are no caches, so the memory is coherent by construction; `hart` has no atomic instructions, so mutual exclusion goes through `mbox`'s spinlocks.
 
 ## License
 
