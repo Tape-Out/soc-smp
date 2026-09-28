@@ -36,7 +36,7 @@ packages:
   kind: ip
   source:
     path: rvcore
-  digest: sha256:cdba93e4d8f750753bc053e5934944dc
+  digest: sha256:71fd8bedfa18dbd03bbaa76d3e5d177f
 - name: rvfi
   version: 0.1.0
   kind: library
@@ -48,7 +48,7 @@ packages:
   kind: ip
   source:
     path: soc-smp
-  digest: sha256:ed083f8b8926e0c3628f9d3e2136a609
+  digest: sha256:57c77e3db99d50a9bf3340c068e28f67
 - name: sram
   version: 0.1.0
   kind: ip

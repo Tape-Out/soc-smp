@@ -69,3 +69,6 @@ connect:
   - clint.mtip[1] == 1
   - plic0.eip[1] == 1
   - 'False'
+test:
+  # 两个核配得不一样也要能跑
+  axes: [cpu0.mul, cpu1.mul, mem.words, mem.sync]
