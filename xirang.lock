@@ -13,12 +13,6 @@ packages:
   source:
     path: amba
   digest: sha256:d3705f25fbcad6457cff68399ff5c5aa
-- name: hart
-  version: 0.1.0
-  kind: ip
-  source:
-    path: hart
-  digest: sha256:29fe6720ad2a06edfb05b26a5bcef61e
 - name: hwcore
   version: 0.1.0
   kind: library
@@ -37,6 +31,12 @@ packages:
   source:
     path: plic
   digest: sha256:a558303f1f1ea048717e3ff3bde2d15a
+- name: rvcore
+  version: 0.1.0
+  kind: ip
+  source:
+    path: rvcore
+  digest: sha256:62999a0327451edd9ed32cfdc635daaa
 - name: rvfi
   version: 0.1.0
   kind: library
@@ -48,7 +48,7 @@ packages:
   kind: ip
   source:
     path: soc-smp
-  digest: sha256:141505ab4bd916ccb095595cc960ba80
+  digest: sha256:ed083f8b8926e0c3628f9d3e2136a609
 - name: sram
   version: 0.1.0
   kind: ip

@@ -14,12 +14,12 @@ deps:
   amba: ^0.1
 instances:
 - name: cpu0
-  of: hart
+  of: rvcore
   with:
     mul: true
     smode: false
 - name: cpu1
-  of: hart
+  of: rvcore
   with:
     mul: true
     smode: false

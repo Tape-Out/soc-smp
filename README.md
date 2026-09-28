@@ -15,13 +15,13 @@ Assembled and tested end to end in CI; the badge stays at `planned` while the as
 
 | Part | Repository | Configuration |
 |:--:|:--:|:--:|
-| cores | [`hart`](https://github.com/Tape-Out/hart) ×2 | RV32IM, machine mode only |
+| cores | [`rvcore`](https://github.com/Tape-Out/rvcore) ×2 | RV32IM, machine mode only |
 | memory | [`sram`](https://github.com/Tape-Out/sram) | 1024 words (4 KiB) at `0x8000_0000`, shared |
 | interrupts | [`aclint`](https://github.com/Tape-Out/aclint) · [`plic`](https://github.com/Tape-Out/plic) | two harts · 8 sources, one context per core |
 | inter-core | [`mbox`](https://github.com/Tape-Out/mbox) | mailboxes and 32 spinlocks |
 | console | [`uart`](https://github.com/Tape-Out/uart) | at `0x1000_1000` |
 
-The four ports of the two cores share one switch, round-robin. There are no caches, so the memory is coherent by construction; `hart` has no atomic instructions, so mutual exclusion goes through `mbox`'s spinlocks.
+The four ports of the two cores share one switch, round-robin. There are no caches, so the memory is coherent by construction; `rvcore` has no atomic instructions, so mutual exclusion goes through `mbox`'s spinlocks.
 
 ## License
 
